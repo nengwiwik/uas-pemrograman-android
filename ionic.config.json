@@ -1,0 +1,7 @@
+{
+  "name": "MyUASWiwik",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

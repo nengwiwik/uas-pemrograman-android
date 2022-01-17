@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Universitas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list *ngFor="let mhs of mahasiswa">
+    <ion-item-sliding>
+    <ion-item>
+    <ion-label> {{mhs.name}} ({{mhs.domains}})</ion-label>
+</ion-item>
+</ion-item-sliding>
+</ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="text-align: center;"> <small>Wiwik Listiyarini 41119051</small> </ion-title>
+  </ion-toolbar>
+</ion-footer>

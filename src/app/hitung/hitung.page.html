@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Hitung</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Bilangan 1</ion-label>
+        <ion-input [(ngModel)]="bil1" keyboardType="number"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating" >Bilangan 2</ion-label>
+        <ion-input [(ngModel)]="bil2" keyboardType="number"></ion-input>
+      </ion-item>
+
+        <ion-item>
+          <ion-label position="floating" >Bilangan 3</ion-label>
+          <ion-input [(ngModel)]="bil3" keyboardType="number"></ion-input>
+        </ion-item>
+
+          <ion-item>
+            <ion-button (click)="onClick(bil1,bil2, bil3)" expand="block" fill="clear"
+            shape="round" style="background-color: rgb(255, 153, 0); color: azure;">
+            Jumlahkan
+            </ion-button>
+          </ion-item>
+
+          <ion-text color="primary" [hidden]="!hasil">
+            <h1>{{hasil}}</h1>
+            </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="text-align: center;"> <small>Wiwik Listiyarini 41119051</small> </ion-title>
+  </ion-toolbar>
+</ion-footer>
